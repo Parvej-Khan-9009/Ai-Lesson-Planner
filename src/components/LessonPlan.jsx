@@ -157,8 +157,8 @@ const LessonPlanner = () => {
               </Accordion>
             </div>
           )}
-
-          {generatedContent && (
+        </form>
+        {generatedContent && (
             <Button
               className="w-full mt-4 bg-green-500 text-lg font-semibold cursor-pointer text-white py-2 rounded-lg hover:bg-green-600"
               onClick={downloadPDF}
@@ -166,7 +166,6 @@ const LessonPlanner = () => {
               Download as PDF
             </Button>
           )}
-        </form>
       </div>
     </div>
   );
